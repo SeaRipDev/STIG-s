@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>PayloadContent</key>
+			<dict>
+				<key>org.mozilla.firefox</key>
+				<dict>
+					<key>Forced</key>
+					<array>
+						<dict>
+							<key>mcx_preference_settings</key>
+							<dict>
+								<!-- V-251546: Allow only TLS 1.2 or above -->
+								<key>SSLVersionMin</key>
+								<string>tls1.2</string>
+
+								<!-- V-251549: Disable automatic extension updates -->
+								<key>ExtensionUpdate</key>
+								<false/>
+
+								<!-- V-251551: Disable form fill assistance -->
+								<key>DisableFormHistory</key>
+								<true/>
+
+								<!-- V-251552: Disable password store -->
+								<key>PasswordManagerEnabled</key>
+								<false/>
+
+								<!-- V-251553: Block pop-up windows -->
+								<key>PopupBlocking</key>
+								<dict>
+									<key>Default</key>
+									<true/>
+									<key>Locked</key>
+									<true/>
+									<key>Allow</key>
+									<array>
+										<!-- Add approved sites here, e.g., <string>http://example.mil</string> -->
+									</array>
+								</dict>
+
+								<!-- V-251557: Disable installation of extensions -->
+								<key>InstallAddonsPermission</key>
+								<dict>
+									<key>Default</key>
+									<false/>
+								</dict>
+
+								<!-- V-251558: Disable telemetry submission to Mozilla -->
+								<key>DisableTelemetry</key>
+								<true/>
+
+								<!-- V-251559: Disable development tools -->
+								<key>DisableDeveloperTools</key>
+								<true/>
+
+								<!-- V-251560: Import enterprise root certificates -->
+								<key>Certificates</key>
+								<dict>
+									<key>ImportEnterpriseRoots</key>
+									<true/>
+								</dict>
+
+								<!-- V-251562: Prevent quick deletion of data -->
+								<key>DisableForgetButton</key>
+								<true/>
+
+								<!-- V-251563: Disable private browsing -->
+								<key>DisablePrivateBrowsing</key>
+								<true/>
+
+								<!-- V-251564: Disable search suggestions -->
+								<key>SearchSuggestEnabled</key>
+								<false/>
+
+								<!-- V-251565: Disable autoplay -->
+								<key>Permissions</key>
+								<dict>
+									<key>Autoplay</key>
+									<dict>
+										<key>Default</key>
+										<string>block-audio-video</string>
+									</dict>
+								</dict>
+
+								<!-- V-251566: Disable network prediction -->
+								<key>NetworkPrediction</key>
+								<false/>
+
+								<!-- V-251567: Enable fingerprinting protection -->
+								<key>EnableTrackingProtection</key>
+								<dict>
+									<key>Fingerprinting</key>
+									<true/>
+									<!-- V-251568: Enable cryptomining protection -->
+									<key>Cryptomining</key>
+									<true/>
+								</dict>
+
+								<!-- V-251571: Disable deprecated ciphers -->
+								<key>DisabledCiphers</key>
+								<dict>
+									<key>TLS_RSA_WITH_3DES_EDE_CBC_SHA</key>
+									<true/>
+								</dict>
+
+								<!-- V-251572: Disable extension recommendations during browsing -->
+								<key>UserMessaging</key>
+								<dict>
+									<key>ExtensionRecommendations</key>
+									<false/>
+								</dict>
+
+								<!-- V-251573: Disable new tab page content -->
+								<key>FirefoxHome</key>
+								<dict>
+									<key>Search</key>
+									<false/>
+									<key>TopSites</key>
+									<false/>
+									<key>SponsoredTopSites</key>
+									<false/>
+									<key>Pocket</key>
+									<false/>
+									<key>SponsoredPocket</key>
+									<false/>
+									<key>Highlights</key>
+									<false/>
+									<key>Snippets</key>
+									<false/>
+									<key>Locked</key>
+									<true/>
+								</dict>
+
+								<!-- V-251577: Disable DNS over HTTPS -->
+								<key>DNSOverHTTPS</key>
+								<dict>
+									<key>Enabled</key>
+									<false/>
+								</dict>
+
+								<!-- V-251578: Disable Firefox accounts -->
+								<key>DisableFirefoxAccounts</key>
+								<true/>
+
+								<!-- V-251580: Disable feedback reporting -->
+								<key>DisableFeedbackCommands</key>
+								<true/>
+
+								<!-- V-251581: Disable encrypted media extensions -->
+								<key>EncryptedMediaExtensions</key>
+								<dict>
+									<key>Enabled</key>
+									<false/>
+									<key>Locked</key>
+									<true/>
+								</dict>
+
+								<!-- V-252881: Do not delete data upon shutdown -->
+								<key>SanitizeOnShutdown</key>
+								<dict>
+									<key>Cache</key>
+									<false/>
+									<key>Cookies</key>
+									<false/>
+									<key>Downloads</key>
+									<false/>
+									<key>FormData</key>
+									<false/>
+									<key>History</key>
+									<false/>
+									<key>Sessions</key>
+									<false/>
+									<key>SiteSettings</key>
+									<false/>
+									<key>OfflineApps</key>
+									<false/>
+									<key>Locked</key>
+									<true/>
+								</dict>
+
+								<!-- V-252908: Disable Pocket -->
+								<key>DisablePocket</key>
+								<true/>
+
+								<!-- V-252909: Disable Firefox Studies -->
+								<key>DisableFirefoxStudies</key>
+								<true/>
+
+								<!-- Advanced Preferences -->
+								<key>Preferences</key>
+								<dict>
+									<!-- V-251547: Ask which certificate to present -->
+									<key>security.default_personal_cert</key>
+									<dict>
+										<key>Value</key>
+										<string>Ask Every Time</string>
+										<key>Status</key>
+										<string>locked</string>
+									</dict>
+
+									<!-- V-251548: Do not auto-check for updated search plugins -->
+									<key>browser.search.update</key>
+									<dict>
+										<key>Value</key>
+										<false/>
+										<key>Status</key>
+										<string>locked</string>
+									</dict>
+
+									<!-- V-251554: JavaScript must not move or resize windows -->
+									<key>dom.disable_window_move_resize</key>
+									<dict>
+										<key>Value</key>
+										<true/>
+										<key>Status</key>
+										<string>locked</string>
+									</dict>
+
+									<!-- V-251555: JavaScript must not raise or lower windows -->
+									<key>dom.disable_window_flip</key>
+									<dict>
+										<key>Value</key>
+										<true/>
+										<key>Status</key>
+										<string>locked</string>
+									</dict>
+
+									<!-- V-251569: Enhanced Tracking Protection -->
+									<key>browser.contentblocking.category</key>
+									<dict>
+										<key>Value</key>
+										<string>strict</string>
+										<key>Status</key>
+										<string>locked</string>
+									</dict>
+
+									<!-- V-251570: Disable extension recommendations -->
+									<key>extensions.htmlaboutaddons.recommendations.enabled</key>
+									<dict>
+										<key>Value</key>
+										<false/>
+										<key>Status</key>
+										<string>locked</string>
+									</dict>
+								</dict>
+							</dict>
+						</dict>
+					</array>
+				</dict>
+			</dict>
+			<key>PayloadDescription</key>
+			<string>Mozilla Firefox STIG V6R6 Configuration</string>
+			<key>PayloadDisplayName</key>
+			<string>Mozilla Firefox STIG Settings</string>
+			<key>PayloadEnabled</key>
+			<true/>
+			<key>PayloadIdentifier</key>
+			<string>org.mozilla.firefox.stig</string>
+			<key>PayloadOrganization</key>
+			<string>DoD</string>
+			<key>PayloadType</key>
+			<string>com.apple.ManagedClient.preferences</string>
+			<key>PayloadUUID</key>
+			<string>11111111-1111-1111-1111-111111111111</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>PayloadDescription</key>
+	<string>Configures Mozilla Firefox to comply with DISA STIG V6R6 for macOS 26</string>
+	<key>PayloadDisplayName</key>
+	<string>Mozilla Firefox STIG V6R6</string>
+	<key>PayloadEnabled</key>
+	<true/>
+	<key>PayloadIdentifier</key>
+	<string>com.organization.firefox.stig.v6r6</string>
+	<key>PayloadOrganization</key>
+	<string>DoD</string>
+	<key>PayloadRemovalDisallowed</key>
+	<true/>
+	<key>PayloadScope</key>
+	<string>System</string>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadUUID</key>
+	<string>11111111-1111-1111-1111-111111111110</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+</dict>
+</plist>

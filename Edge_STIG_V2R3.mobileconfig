@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>PayloadContent</key>
+			<dict>
+				<key>com.microsoft.Edge</key>
+				<dict>
+					<key>Forced</key>
+					<array>
+						<dict>
+							<key>mcx_preference_settings</key>
+							<dict>
+								<!-- V-235719: User control of proxy settings must be disabled -->
+								<key>ProxySettings</key>
+								<string>{"ProxyMode": "system"}</string>
+
+								<!-- V-235720: Bypassing SmartScreen prompts for sites must be disabled -->
+								<key>PreventSmartScreenPromptOverride</key>
+								<true/>
+
+								<!-- V-235721: Bypassing SmartScreen warnings about downloads must be disabled -->
+								<key>PreventSmartScreenPromptOverrideForFiles</key>
+								<true/>
+
+								<!-- V-235722: SmartScreen allowlist (Optional) -->
+								<key>SmartScreenAllowListDomains</key>
+								<array>
+									<!-- Add approved domains here if needed -->
+								</array>
+
+								<!-- V-235723: InPrivate mode must be disabled -->
+								<key>InPrivateModeAvailability</key>
+								<integer>1</integer>
+
+								<!-- V-235724: Background processing must be disabled -->
+								<key>BackgroundModeEnabled</key>
+								<false/>
+
+								<!-- V-235725: The ability of sites to show pop-ups must be disabled -->
+								<key>DefaultPopupsSetting</key>
+								<integer>2</integer>
+
+								<!-- V-235726: The default search provider must use encrypted connection -->
+								<key>ManagedSearchEngines</key>
+								<string>[{"allow_search_engine_discovery": false},{"is_default": true,"name": "Microsoft Bing","keyword": "bing","search_url": "https://www.bing.com/search?q={searchTerms}"}]</string>
+
+								<!-- V-235727: Data Synchronization must be disabled -->
+								<key>SyncDisabled</key>
+								<true/>
+
+								<!-- V-235728: Network prediction must be disabled -->
+								<key>NetworkPredictionOptions</key>
+								<integer>2</integer>
+
+								<!-- V-235729: Search suggestions must be disabled -->
+								<key>SearchSuggestEnabled</key>
+								<false/>
+
+								<!-- V-235730: Importing of autofill form data must be disabled -->
+								<key>ImportAutofillFormData</key>
+								<false/>
+
+								<!-- V-235731: Importing of browser settings must be disabled -->
+								<key>ImportBrowserSettings</key>
+								<false/>
+
+								<!-- V-235732: Importing of cookies must be disabled -->
+								<key>ImportCookies</key>
+								<false/>
+
+								<!-- V-235733: Importing of extensions must be disabled -->
+								<key>ImportExtensions</key>
+								<false/>
+
+								<!-- V-235734: Importing of browsing history must be disabled -->
+								<key>ImportHistory</key>
+								<false/>
+
+								<!-- V-235735: Importing of home page settings must be disabled -->
+								<key>ImportHomepage</key>
+								<false/>
+
+								<!-- V-235736: Importing of open tabs must be disabled -->
+								<key>ImportOpenTabs</key>
+								<false/>
+
+								<!-- V-235737: Importing of payment info must be disabled -->
+								<key>ImportPaymentInfo</key>
+								<false/>
+
+								<!-- V-235738: Importing of saved passwords must be disabled -->
+								<key>ImportSavedPasswords</key>
+								<false/>
+
+								<!-- V-235739: Importing of search engine settings must be disabled -->
+								<key>ImportSearchEngine</key>
+								<false/>
+
+								<!-- V-235740: Importing of shortcuts must be disabled -->
+								<key>ImportShortcuts</key>
+								<false/>
+
+								<!-- V-235741: AutoplayAllowed must be disabled -->
+								<key>AutoplayAllowed</key>
+								<false/>
+
+								<!-- V-235742: WebUSB must be disabled -->
+								<key>DefaultWebUsbGuardSetting</key>
+								<integer>2</integer>
+
+								<!-- V-235743: Google Cast must be disabled -->
+								<key>EnableMediaRouter</key>
+								<false/>
+
+								<!-- V-235744: Web Bluetooth API must be disabled -->
+								<key>DefaultWebBluetoothGuardSetting</key>
+								<integer>2</integer>
+
+								<!-- V-235745: Autofill for Credit Cards must be disabled -->
+								<key>AutofillCreditCardEnabled</key>
+								<false/>
+
+								<!-- V-235746: Autofill for addresses must be disabled -->
+								<key>AutofillAddressEnabled</key>
+								<false/>
+
+								<!-- V-235747: Online revocation checks must be performed -->
+								<key>EnableOnlineRevocationChecks</key>
+								<true/>
+
+								<!-- V-235748: Personalization reporting must be disabled -->
+								<key>PersonalizationReportingEnabled</key>
+								<false/>
+
+								<!-- V-235749: Site tracking of location must be disabled -->
+								<key>DefaultGeolocationSetting</key>
+								<integer>2</integer>
+
+								<!-- V-235750: Browser history must be saved -->
+								<key>AllowDeletingBrowserHistory</key>
+								<false/>
+
+								<!-- V-235751: Edge development tools must be disabled -->
+								<key>DeveloperToolsAvailability</key>
+								<integer>2</integer>
+
+								<!-- V-235752: Download restrictions must be configured -->
+								<key>DownloadRestrictions</key>
+								<integer>1</integer>
+
+								<!-- V-235753: URLs allowlisted for pop-ups (Optional) -->
+								<key>PopupsAllowedForUrls</key>
+								<array>
+									<!-- Add approved URLs here if needed -->
+								</array>
+
+								<!-- V-235754: Extensions installation must be blocklisted by default -->
+								<key>ExtensionInstallBlocklist</key>
+								<array>
+									<string>*</string>
+								</array>
+
+								<!-- V-235755: Extensions that are approved must be allowlisted (Optional) -->
+								<key>ExtensionInstallAllowlist</key>
+								<array>
+									<!-- Add approved extension IDs here if needed -->
+								</array>
+
+								<!-- V-235756: The Password Manager must be disabled -->
+								<key>PasswordManagerEnabled</key>
+								<false/>
+
+								<!-- V-235760: Site isolation for every site must be enabled -->
+								<key>SitePerProcess</key>
+								<true/>
+
+								<!-- V-235761: Supported authentication schemes must be configured -->
+								<key>AuthSchemes</key>
+								<string>ntlm,negotiate</string>
+
+								<!-- V-235763: Microsoft Defender SmartScreen must be enabled -->
+								<key>SmartScreenEnabled</key>
+								<true/>
+
+								<!-- V-235764: SmartScreen must block potentially unwanted apps -->
+								<key>SmartScreenPuaEnabled</key>
+								<true/>
+
+								<!-- V-235765: Download location prompt must be configured -->
+								<key>PromptForDownloadLocation</key>
+								<true/>
+
+								<!-- V-235766: Tracking of browsing activity must be disabled -->
+								<key>TrackingPrevention</key>
+								<integer>3</integer>
+
+								<!-- V-235767: Website ability to query for payment methods must be disabled -->
+								<key>PaymentMethodQueryEnabled</key>
+								<false/>
+
+								<!-- V-235768: Suggestions of similar pages on navigation error must be disabled -->
+								<key>AlternateErrorPagesEnabled</key>
+								<false/>
+
+								<!-- V-235769: User feedback must be disabled -->
+								<key>UserFeedbackAllowed</key>
+								<false/>
+
+								<!-- V-235770: The collections feature must be disabled -->
+								<key>EdgeCollectionsEnabled</key>
+								<false/>
+
+								<!-- V-235771: The Share Experience feature must be disabled -->
+								<key>ConfigureShare</key>
+								<integer>1</integer>
+
+								<!-- V-235772: Guest mode must be disabled -->
+								<key>BrowserGuestModeEnabled</key>
+								<false/>
+
+								<!-- V-235773: Relaunch notification must be required -->
+								<key>RelaunchNotification</key>
+								<integer>2</integer>
+
+								<!-- V-235774: The built-in DNS client must be disabled -->
+								<key>BuiltInDnsClientEnabled</key>
+								<false/>
+
+								<!-- V-246736: Use of the QUIC protocol must be disabled -->
+								<key>QuicAllowed</key>
+								<false/>
+
+								<!-- V-251694: Autoplay allowlist (Optional) -->
+								<key>AutoplayAllowlist</key>
+								<array>
+									<!-- Add approved domains for autoplay here if needed -->
+								</array>
+
+								<!-- V-260465: Visual Search must be disabled -->
+								<key>VisualSearchEnabled</key>
+								<false/>
+
+								<!-- V-260466: Copilot must be disabled -->
+								<key>HubsSidebarEnabled</key>
+								<false/>
+
+								<!-- V-260467: Session only-based cookies must be enabled -->
+								<key>DefaultCookiesSetting</key>
+								<integer>4</integer>
+
+								<!-- V-266981: FriendlyURLs must be disabled -->
+								<key>ConfigureDefaultPasteFormatForUrls</key>
+								<integer>1</integer>
+							</dict>
+						</dict>
+					</array>
+				</dict>
+			</dict>
+			<key>PayloadDescription</key>
+			<string>Microsoft Edge STIG V2R3 Configuration</string>
+			<key>PayloadDisplayName</key>
+			<string>Microsoft Edge STIG Settings</string>
+			<key>PayloadEnabled</key>
+			<true/>
+			<key>PayloadIdentifier</key>
+			<string>com.microsoft.Edge.stig</string>
+			<key>PayloadOrganization</key>
+			<string>DoD</string>
+			<key>PayloadType</key>
+			<string>com.apple.ManagedClient.preferences</string>
+			<key>PayloadUUID</key>
+			<string>22222222-2222-2222-2222-222222222222</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>PayloadDescription</key>
+	<string>Configures Microsoft Edge to comply with DISA STIG V2R3 for macOS 26</string>
+	<key>PayloadDisplayName</key>
+	<string>Microsoft Edge STIG V2R3</string>
+	<key>PayloadEnabled</key>
+	<true/>
+	<key>PayloadIdentifier</key>
+	<string>com.organization.edge.stig.v2r3</string>
+	<key>PayloadOrganization</key>
+	<string>DoD</string>
+	<key>PayloadRemovalDisallowed</key>
+	<true/>
+	<key>PayloadScope</key>
+	<string>System</string>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadUUID</key>
+	<string>22222222-2222-2222-2222-222222222220</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+</dict>
+</plist>

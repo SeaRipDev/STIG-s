@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>PayloadContent</key>
+			<dict>
+				<key>com.google.Chrome</key>
+				<dict>
+					<key>Forced</key>
+					<array>
+						<dict>
+							<key>mcx_preference_settings</key>
+							<dict>
+								<!-- DTBC-0001: Firewall traversal from remote host must be disabled -->
+								<key>RemoteAccessHostFirewallTraversal</key>
+								<false/>
+
+								<!-- DTBC-0002: Site tracking users location must be disabled -->
+								<key>DefaultGeolocationSetting</key>
+								<integer>2</integer>
+
+								<!-- DTBC-0004: Sites ability to show pop-ups must be disabled -->
+								<key>DefaultPopupsSetting</key>
+								<integer>2</integer>
+
+								<!-- DTBC-0005: Extensions installation must be blocklisted by default -->
+								<key>ExtensionInstallBlocklist</key>
+								<array>
+									<string>*</string>
+								</array>
+
+								<!-- DTBC-0006: Extensions that are approved must be allowlisted -->
+								<!-- Add your approved extension IDs here -->
+								<key>ExtensionInstallAllowlist</key>
+								<array>
+									<!-- Example: <string>extension_id_here</string> -->
+								</array>
+
+								<!-- DTBC-0007: The default search provider's name must be set -->
+								<key>DefaultSearchProviderName</key>
+								<string>Google Encrypted</string>
+
+								<!-- DTBC-0008: The default search provider URL must be set to perform encrypted searches -->
+								<key>DefaultSearchProviderSearchURL</key>
+								<string>https://www.google.com/search?q={searchTerms}</string>
+
+								<!-- DTBC-0009: Default search provider must be enabled -->
+								<key>DefaultSearchProviderEnabled</key>
+								<true/>
+
+								<!-- DTBC-0011: The Password Manager must be disabled -->
+								<key>PasswordManagerEnabled</key>
+								<false/>
+
+								<!-- DTBC-0017: Background processing must be disabled -->
+								<key>BackgroundModeEnabled</key>
+								<false/>
+
+								<!-- DTBC-0020: Google Data Synchronization must be disabled -->
+								<key>SyncDisabled</key>
+								<true/>
+
+								<!-- DTBC-0021: The URL protocol schema javascript must be disabled -->
+								<key>URLBlocklist</key>
+								<array>
+									<string>javascript://*</string>
+								</array>
+
+								<!-- DTBC-0023: Cloud print sharing must be disabled -->
+								<key>CloudPrintProxyEnabled</key>
+								<false/>
+
+								<!-- DTBC-0025: Network prediction must be disabled -->
+								<key>NetworkPredictionOptions</key>
+								<integer>2</integer>
+
+								<!-- DTBC-0026: Metrics reporting to Google must be disabled -->
+								<key>MetricsReportingEnabled</key>
+								<false/>
+
+								<!-- DTBC-0027: Search suggestions must be disabled -->
+								<key>SearchSuggestEnabled</key>
+								<false/>
+
+								<!-- DTBC-0029: Importing of saved passwords must be disabled -->
+								<key>ImportSavedPasswords</key>
+								<false/>
+
+								<!-- DTBC-0030: Incognito mode must be disabled -->
+								<key>IncognitoModeAvailability</key>
+								<integer>1</integer>
+
+								<!-- DTBC-0037: Online revocation checks must be performed -->
+								<key>EnableOnlineRevocationChecks</key>
+								<true/>
+
+								<!-- DTBC-0038: Safe Browsing must be enabled -->
+								<key>SafeBrowsingProtectionLevel</key>
+								<integer>1</integer>
+
+								<!-- DTBC-0039: Browser history must be saved -->
+								<key>SavingBrowserHistoryDisabled</key>
+								<false/>
+
+								<!-- DTBC-0052: Deletion of browser history must be disabled -->
+								<key>AllowDeletingBrowserHistory</key>
+								<false/>
+
+								<!-- DTBC-0053: Prompt for download location must be enabled -->
+								<key>PromptForDownloadLocation</key>
+								<true/>
+
+								<!-- DTBC-0055: Download restrictions must be configured -->
+								<key>DownloadRestrictions</key>
+								<integer>1</integer>
+
+								<!-- DTBC-0057: Safe Browsing Extended Reporting must be disabled -->
+								<key>SafeBrowsingExtendedReportingEnabled</key>
+								<false/>
+
+								<!-- DTBC-0058: WebUSB must be disabled -->
+								<key>DefaultWebUsbGuardSetting</key>
+								<integer>2</integer>
+
+								<!-- DTBC-0063: Google Cast must be disabled -->
+								<key>EnableMediaRouter</key>
+								<false/>
+
+								<!-- DTBC-0064: Autoplay must be disabled -->
+								<key>AutoplayAllowed</key>
+								<false/>
+
+								<!-- DTBC-0065: URLs must be allowlisted for Autoplay use (Optional) -->
+								<key>AutoplayAllowlist</key>
+								<array>
+									<!-- Example: <string>[*.]mil</string> -->
+									<!-- Example: <string>[*.]gov</string> -->
+								</array>
+
+								<!-- DTBC-0066: Anonymized data collection must be disabled -->
+								<key>UrlKeyedAnonymizedDataCollectionEnabled</key>
+								<false/>
+
+								<!-- DTBC-0067: Collection of WebRTC event logs must be disabled -->
+								<key>WebRtcEventLogCollectionAllowed</key>
+								<false/>
+
+								<!-- DTBC-0068: Chrome development tools must be disabled -->
+								<key>DeveloperToolsAvailability</key>
+								<integer>2</integer>
+
+								<!-- DTBC-0069: Guest Mode must be disabled -->
+								<key>BrowserGuestModeEnabled</key>
+								<false/>
+
+								<!-- DTBC-0070: AutoFill for credit cards must be disabled -->
+								<key>AutofillCreditCardEnabled</key>
+								<false/>
+
+								<!-- DTBC-0071: AutoFill for addresses must be disabled -->
+								<key>AutofillAddressEnabled</key>
+								<false/>
+
+								<!-- DTBC-0072: Import AutoFill form data must be disabled -->
+								<key>ImportAutofillFormData</key>
+								<false/>
+
+								<!-- DTBC-0073: Web Bluetooth API must be disabled -->
+								<key>DefaultWebBluetoothGuardSetting</key>
+								<integer>2</integer>
+
+								<!-- DTBC-0074: Use of the QUIC protocol must be disabled -->
+								<key>QuicAllowed</key>
+								<false/>
+
+								<!-- DTBC-0045: Session only based cookies must be enabled -->
+								<key>DefaultCookiesSetting</key>
+								<integer>4</integer>
+
+								<!-- DTBC-0075: Create Themes with AI must be disabled -->
+								<key>CreateThemesSettings</key>
+								<integer>2</integer>
+
+								<!-- DTBC-0076: DevTools Generative AI features must be disabled -->
+								<key>DevToolsGenAiSettings</key>
+								<integer>2</integer>
+
+								<!-- DTBC-0077: GenAI local foundational model must be disabled -->
+								<key>GenAILocalFoundationalModelSettings</key>
+								<integer>1</integer>
+
+								<!-- DTBC-0078: Help Me Write must be disabled -->
+								<key>HelpMeWriteSettings</key>
+								<integer>2</integer>
+
+								<!-- DTBC-0079: AI-powered History Search must be disabled -->
+								<key>HistorySearchSettings</key>
+								<integer>2</integer>
+
+								<!-- DTBC-0080: Tab Compare Settings must be disabled -->
+								<key>TabCompareSettings</key>
+								<integer>2</integer>
+							</dict>
+						</dict>
+					</array>
+				</dict>
+			</dict>
+			<key>PayloadDescription</key>
+			<string>Google Chrome STIG V2R11 Configuration</string>
+			<key>PayloadDisplayName</key>
+			<string>Google Chrome STIG Settings</string>
+			<key>PayloadEnabled</key>
+			<true/>
+			<key>PayloadIdentifier</key>
+			<string>com.google.Chrome.stig</string>
+			<key>PayloadOrganization</key>
+			<string>DoD</string>
+			<key>PayloadType</key>
+			<string>com.apple.ManagedClient.preferences</string>
+			<key>PayloadUUID</key>
+			<string>00000000-0000-0000-0000-000000000001</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>PayloadDescription</key>
+	<string>Configures Google Chrome to comply with DISA STIG V2R11 for macOS 26</string>
+	<key>PayloadDisplayName</key>
+	<string>Google Chrome STIG V2R11</string>
+	<key>PayloadEnabled</key>
+	<true/>
+	<key>PayloadIdentifier</key>
+	<string>com.organization.chrome.stig.v2r11</string>
+	<key>PayloadOrganization</key>
+	<string>DoD</string>
+	<key>PayloadRemovalDisallowed</key>
+	<true/>
+	<key>PayloadScope</key>
+	<string>System</string>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadUUID</key>
+	<string>00000000-0000-0000-0000-000000000000</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+</dict>
+</plist>
