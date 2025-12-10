@@ -200,7 +200,7 @@ The script uses the macOS `defaults read` command to check if policies are prope
 
 ```bash
 # Navigate to the STIG directory
-cd ~/Desktop/RipDev/STIG
+cd ~/path/to/STIG
 
 # Make script executable (if not already done)
 chmod +x verify_browser_stig_compliance.sh
@@ -652,3 +652,4 @@ For issues or questions:
 ## License
 
 These configuration profiles implement publicly available DISA STIG requirements for use in government and DoD environments.
+
